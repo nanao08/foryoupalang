@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="icon" href="flowers.png" type="image/x-icon">
     <title>flowers</title>
 </head>
 <body class="container">
-    <!-- ADDED: Welcome page with button -->
+    <!-- Welcome page with button -->
     <div id="welcome-page">
-        <h1 style="color: white; font-size: 48px; text-align: center;">HI MAHALKO!🌸</h1>
-        <button class="welcome-button" onclick="startFlowers()"> Pa Click Po 🥺</button>
+        <h1 style="color: white; font-size: 48px; text-align: center;">🌸 HELLO MAHALKO! 🌸</h1>
+        <button class="welcome-button" onclick="startFlowers()">Click mo lang po ito</button>
     </div>
     
-    <!-- ADDED: Anniversary text above flowers -->
-    <div id="anniversary-text">Happy 1st Anniversary! 💕</div>
+    <!-- Anniversary text above flowers -->
+    <div id="anniversary-text"></div>
+    
+    <!-- ADDED: Button to show second message card -->
+    <button id="show-message-btn" onclick="showMessageCard()">read my message for you 💌</button>
+    
+    <!-- ADDED: Second message card -->
+    <div id="second-message">
+        <div class="message-card">
+            <h1>Happy 1st Anniversary, Mahalko!💕</h1>
+            <p>first of all happy ramadhan kareem sayo.</p>
+            <p>1year na tayo mahal, at sa 1year na yan madaming nag bago pero diko expect na nakakaya ko ang kasupladahan mo. hehehe! naniniwala talaga ako sa sinasabi ng iba kapag mahal mo talaga kahit anung ipakita sayo at iparamdam sayo ng mahal mo mamahalin mo pa den kasi ganun sya.</p>
+            <p>ang sarap lang sa pakiramdam na mahalin ka mahal.</p>
+            <p>you make my day so special everytime or day na ma spend natin ang time natin sa isa't isa.</p>
+            <p>iloveyouuuu more and most palangnakinss 😚🌷</p>
+            <div class="heart-icon">❤️</div>
+            
+            <button class="close-button" onclick="closeMessageCard()">Close Message</button>
+        </div>
+    </div>
 
     <!-- YOUR ORIGINAL CODE - COMPLETELY UNCHANGED -->
     <div class="night"></div>
@@ -319,5 +337,4 @@
 
     <script src="main.js"></script>
 </body>
-
 </html>
