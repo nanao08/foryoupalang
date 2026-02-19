@@ -1,13 +1,22 @@
-// ADDED: Simple function to show flowers and text
-        function startFlowers() {
-            document.getElementById('welcome-page').classList.add('hide');
-            document.getElementById('anniversary-text').classList.add('show');
-            // ADJUSTED TIMING: Now flowers grow AFTER button click
-            document.body.classList.remove("container");
-        }
-        
-        // ADJUSTED TIMING: Removed automatic container removal
-        onload = () =>{
-            // Flowers will wait for button click
-            // Container class keeps them paused until then
-        };
+// Function to show flowers and text
+function startFlowers() {
+    document.getElementById('welcome-page').classList.add('hide');
+    document.getElementById('anniversary-text').classList.add('show');
+    document.getElementById('show-message-btn').classList.add('visible');
+    document.body.classList.remove("container");
+}
+
+// ADDED: Function to show second message card
+function showMessageCard() {
+    document.getElementById('second-message').classList.add('visible');
+}
+
+// ADDED: Function to close second message card
+function closeMessageCard() {
+    document.getElementById('second-message').classList.remove('visible');
+}
+
+// Flowers will wait for button click
+window.onload = () => {
+    console.log('Ready for button click!');
+};
